@@ -1,0 +1,149 @@
+
+.checkout-container {
+    min-height: 100vh;
+    background: #f5f6fa;
+    padding: 40px 7%;
+    box-sizing: border-box;
+}
+
+.checkout-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.checkout-header h1 {
+    font-size: 34px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.checkout-header p {
+    color: #777;
+}
+
+.checkout-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+    align-items: start;
+}
+
+.checkout-form,
+.checkout-summary {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.checkout-form h2,
+.checkout-summary h2 {
+    color: #222;
+    margin-bottom: 25px;
+}
+
+.checkout-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.checkout-form input:focus {
+    border-color: #ff7a18;
+}
+
+.payment-btn {
+    padding: 15px;
+    background: #ff7a18;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.payment-btn:hover {
+    background: #e76500;
+}
+
+.back-cart {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ff7a18;
+    text-decoration: none;
+}
+
+.checkout-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    gap: 10px;
+}
+
+.checkout-product h4 {
+    margin: 0 0 7px;
+    color: #333;
+}
+
+.checkout-product p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.checkout-product span {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    border-top: 2px solid #eee;
+    padding-top: 15px;
+}
+
+.summary-total h2 {
+    color: #ff7a18;
+    margin: 0;
+}
+
+.secure-text {
+    margin-top: 25px;
+    text-align: center;
+    color: #16834b;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 25px 15px;
+    }
+
+    .checkout-content {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-form,
+    .checkout-summary {
+        padding: 20px;
+    }
+}

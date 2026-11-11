@@ -1,0 +1,145 @@
+
+.admin-dashboard {
+    min-height: 90vh;
+    padding: 35px;
+    background: #f5f6fa;
+}
+
+/* First Div */
+
+.admin-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.admin-info h1 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.admin-info p {
+    color: #777;
+}
+
+.admin-details {
+    text-align: right;
+}
+
+.admin-details h3 {
+    color: #333;
+}
+
+.admin-details span {
+    display: inline-block;
+    background: #fff0e6;
+    color: #f07828;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+/* Second Div */
+
+.admin-statistics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.stat-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+    border-left: 5px solid #f07828;
+}
+
+.stat-box h3 {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.stat-box h2 {
+    color: #222;
+    font-size: 27px;
+}
+
+/* Third Div */
+
+.admin-actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.action-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    border-bottom: 4px solid #f07828;
+}
+
+.action-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.action-card h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.action-card h3 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.action-card p {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Responsive */
+
+@media(max-width: 900px) {
+    .admin-statistics,
+    .admin-actions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 550px) {
+    .admin-dashboard {
+        padding: 15px;
+    }
+
+    .admin-statistics,
+    .admin-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .admin-details {
+        text-align: left;
+    }
+}

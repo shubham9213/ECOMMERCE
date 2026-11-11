@@ -1,0 +1,61 @@
+
+.footer {
+    background-color: #111827;
+    color: #ffffff;
+    padding: 55px 5% 0;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 45px;
+}
+
+.footer-about h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.footer-about h2 span {
+    color: #60a5fa;
+}
+
+.footer-about p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    max-width: 300px;
+}
+
+
+
+
+
+
+
+.footer-contact p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer {
+        padding-top: 40px;
+    }
+}

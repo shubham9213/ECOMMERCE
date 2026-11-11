@@ -1,0 +1,94 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.allorder-container {
+    min-height: 85vh;
+    padding: 40px 25px;
+    background: #f4f6fb;
+}
+
+.allorder-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.order-table-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    overflow-x: auto;
+}
+
+.order-table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+.order-table-wrapper th {
+    background: #ff702e;
+    color: white;
+    padding: 16px 12px;
+    text-align: left;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.order-table-wrapper td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    font-size: 14px;
+}
+
+.order-table-wrapper tr:hover {
+    background: #fff8f4;
+}
+
+.order-status {
+    padding: 9px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    background: white;
+}
+
+.order-status.pending {
+    color: #b7791f;
+    background: #fff8dc;
+}
+
+.order-status.shipped {
+    color: #2563eb;
+    background: #eff6ff;
+}
+
+.order-status.delivered {
+    color: #15803d;
+    background: #ecfdf3;
+}
+
+@media (max-width: 768px) {
+    .allorder-container {
+        padding: 25px 12px;
+    }
+
+    .allorder-container h2 {
+        font-size: 23px;
+    }
+
+    .order-table-wrapper {
+        padding: 15px;
+    }
+}

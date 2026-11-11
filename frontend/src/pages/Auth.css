@@ -1,0 +1,163 @@
+
+/* Main Container */
+.auth-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    background: linear-gradient(135deg, #fff3ed, #ffe0d2);
+    font-family: Arial, sans-serif;
+}
+
+/* Auth Card */
+.auth-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+.auth-card:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header h1 {
+    font-size: 34px;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.auth-header h1 span {
+    color: #ff6b35;
+}
+
+.auth-header h2 {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.auth-header p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #ff6b35;
+    box-shadow: 0 0 6px rgba(255, 107, 53, 0.2);
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+/* Submit Button */
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6b35;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.auth-btn:hover {
+    background: #e95520;
+    transform: translateY(-2px);
+}
+
+.auth-btn:disabled {
+    background: #ffab8d;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Bottom Login/Register Link */
+.auth-bottom {
+    text-align: center;
+    margin-top: 22px;
+    color: #666;
+    font-size: 14px;
+}
+
+.auth-bottom a {
+    color: #ff6b35;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.auth-bottom a:hover {
+    color: #e95520;
+    text-decoration: underline;
+}
+
+/* Error / Success Message */
+.auth-message {
+    text-align: center;
+    color: #d93025;
+    background: #fff0ef;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 25px 12px;
+    }
+
+    .auth-card {
+        padding: 25px 20px;
+    }
+
+    .auth-header h1 {
+        font-size: 29px;
+    }
+
+    .auth-header h2 {
+        font-size: 22px;
+    }
+}

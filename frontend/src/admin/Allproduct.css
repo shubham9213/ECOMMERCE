@@ -1,0 +1,142 @@
+
+.allproduct-container {
+    min-height: 85vh;
+    padding: 35px;
+    background: #f5f6fa;
+}
+
+/* Add Product Button */
+
+.allproduct-container > a {
+    display: inline-block;
+    background: #ff6533;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.allproduct-container > a:hover {
+    background: #e94e20;
+    transform: translateY(-2px);
+}
+
+/* Heading */
+
+.allproduct-container h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+/* Table Container */
+.product-table-wrapper {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    overflow-x: auto;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.product-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.allproduct-container > div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    overflow-x: auto;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Table */
+
+.allproduct-container table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+/* Table Heading */
+
+.allproduct-container th {
+    background: #fff0e6;
+    color: #333;
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Table Data */
+
+.allproduct-container td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Hover */
+
+.allproduct-container tbody tr:hover {
+    background: #fafafa;
+}
+
+/* Edit Link */
+
+.allproduct-container td a {
+    display: inline-block;
+    background: #fff0e6;
+    color: #f07828;
+    padding: 8px 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.allproduct-container td a:hover {
+    background: #ff6533;
+    color: white;
+}
+
+/* Delete Button */
+
+.allproduct-container td button {
+    background: #ffe8e8;
+    color: #e53935;
+    border: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.allproduct-container td button:hover {
+    background: #e53935;
+    color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .allproduct-container {
+        padding: 20px 12px;
+    }
+
+    .allproduct-container h2 {
+        font-size: 23px;
+    }
+
+    .allproduct-container > div {
+        padding: 12px;
+    }
+}
