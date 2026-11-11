@@ -18,6 +18,9 @@ app.use(cors({
     method:["GET","POST","PUT","DELETE"],
     allowHeaders:["Content-Type","Authorization"]
 }));
+app.get("/", (req, res) => {
+  res.send("ShopNest Backend is Running Successfully!");
+});
 
 app.use("/api/user", userRouter);
 app.use("/api/product",productRouter);
