@@ -51,7 +51,7 @@ export default function Checkout(){
 
             //order razoorya craete now DO VERIFY 
             const options={
-                key:rzp_test_Tykm1TdMAqiS2L,//any radnom striing
+                key:"rzp_test_Tykm1TdMAqiS2L",//any radnom striing
                 name:"test",
                 description:"asdfghjkl",
                 amount:data.order.amount,
@@ -95,7 +95,7 @@ export default function Checkout(){
                         }
                         else{
                             alert("payment order ot craete")
-                            return navigate("/checakout")
+                            return navigate("/checkout")
                         }
                 }
                 else{
@@ -108,7 +108,7 @@ export default function Checkout(){
                 prefill:{
                     name:address.name,
                     email:user.email,
-                    contact:9205972268
+                    contact:"9205972268"
                 },
                 theme:{
                     color:'blue'
