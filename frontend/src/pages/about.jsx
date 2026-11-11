@@ -1,6 +1,6 @@
 
 import React from "react";
-import "./Pages.css";
+import "./pages.css";
 
 const About = () => {
     return (

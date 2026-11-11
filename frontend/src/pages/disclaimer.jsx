@@ -1,6 +1,6 @@
 
 import React from "react";
-import "./Disclaimer.css";
+import "./disclaimer.css";
 
 const Disclaimer = () => {
     return (
