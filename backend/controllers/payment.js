@@ -23,7 +23,8 @@ if(!order){
 }
 resp.status(200).json({message:"Order created", order});
 }catch (err){
-    resp.status(300).json({message:"server error"})
+     console.log("Razorpay Error:", err);
+    resp.status(300).json({message:"sessrver error"})
     }
 }
 

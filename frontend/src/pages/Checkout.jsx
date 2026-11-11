@@ -24,7 +24,7 @@ export default function Checkout(){
                 headers:{
                         "Content-Type": "application/json"
                 },
-                body:JSON.stringify({amount:"erewe"})
+                body:JSON.stringify({amount:totalprice})
 
                 
 
@@ -50,7 +50,7 @@ export default function Checkout(){
 
             //order razoorya craete now DO VERIFY 
             const options={
-                key:"razorpaykey",//any radnom striing
+                key:rzp_test_Tykm1TdMAqiS2L,//any radnom striing
                 name:"test",
                 description:"asdfghjkl",
                 amount:data.order.amount,
@@ -164,8 +164,8 @@ export default function Checkout(){
             navigate("/login");
             return;
         }
-        // handlepayment()
-        bypass();
+        handlepayment()
+        // bypass();
     }
 
 
