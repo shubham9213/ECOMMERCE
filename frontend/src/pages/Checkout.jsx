@@ -150,7 +150,7 @@ export default function Checkout(){
                         }
                         else{
                             alert("payment order ot craete")
-                            return navigate("/checakout")
+                            return navigate("/checkout")
                         }
         }catch(err){console.log("error")}
 
