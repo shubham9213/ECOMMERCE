@@ -32,7 +32,7 @@ const ProductPage = () => {
         const fetchProduct = async () => {
             try {
                 const response = await fetch(
-                    `http://localhost:8000/api/product/${id}`
+                    `https://backend-commerce-tsn0.onrender.com/api/product/${id}`
                 );
 
                 const data = await response.json();

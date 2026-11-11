@@ -31,7 +31,7 @@ export default function Editproduct() {
      const fetchdata=async()=>{
          try{
             setloading(true);
-            const res=await fetch(`http://localhost:8000/api/product/${id}`,{
+            const res=await fetch(`https://backend-commerce-tsn0.onrender.com/api/product/${id}`,{
                 method:"GET",
                 headers:{
                     Authorization:`Bearer ${user.token}`
@@ -88,7 +88,7 @@ export default function Editproduct() {
             formdata.append("stock", data.qty);
             formdata.append("image", image);
 
-            const res = await fetch(`http://localhost:8000/api/product/${id}`, {
+            const res = await fetch(`https://backend-commerce-tsn0.onrender.com/api/product/${id}`, {
                 method: "PUT",
                 headers: {
                     Authorization: `Bearer ${user.token}`

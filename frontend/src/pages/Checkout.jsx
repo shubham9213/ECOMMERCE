@@ -19,7 +19,7 @@ export default function Checkout(){
     const handlepayment=async()=>{
         try{//create razorpay order
             
-            const order=await fetch("http://localhost:8000/api/payment/createorder",{
+            const order=await fetch("https://backend-commerce-tsn0.onrender.com/api/payment/createorder",{
                 method:"POST",
                 headers:{
                         "Content-Type": "application/json"
@@ -60,7 +60,7 @@ export default function Checkout(){
 
                 handler:async function(response){ //response have 3 value in it razor payment order signature given to do ver
                     //verifyiction here
-                    const verify=await fetch("http://localhost:8000/api/payment/verify",{
+                    const verify=await fetch("https://backend-commerce-tsn0.onrender.com/api/payment/verify",{
                         method:"POST",
                         headers:{
                             "Content-Type": "application/json"
@@ -72,7 +72,7 @@ export default function Checkout(){
 
                 if(verify.status===200){
                     //model order create 
-                    const resp=await fetch("http://localhost:8000/api/order/createorder",{
+                    const resp=await fetch("https://backend-commerce-tsn0.onrender.com/api/order/createorder",{
                         method:"POST",
                         headers:{
                    "Content-Type": "application/json",

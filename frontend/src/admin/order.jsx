@@ -18,7 +18,7 @@ export default function Order(){
         }
         const fetchdata=async()=>{
             try{
-                const res=await fetch("http://localhost:8000/api/order/allorder",{
+                const res=await fetch("https://backend-commerce-tsn0.onrender.com/api/order/allorder",{
                     headers:{
                         Authorization:`Bearer ${user.token}`
                     }
@@ -42,7 +42,7 @@ export default function Order(){
 
     const handlestatus=async(id,status)=>{
         try{
-            const data=await fetch("http://localhost:8000/api/order/status",{
+            const data=await fetch("https://backend-commerce-tsn0.onrender.com/api/order/status",{
                 method:"PUT",
                 headers:{
                     "Content-Type": "application/json",

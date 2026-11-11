@@ -45,7 +45,7 @@ export default function Addproduct() {
             formdata.append("qty", data.qty);
             formdata.append("image", image);
 
-            const res = await fetch("http://localhost:8000/api/product/products", {
+            const res = await fetch("https://backend-commerce-tsn0.onrender.com/api/product/products", {
                 method: "POST",
                 headers: {
                     Authorization: `Bearer ${user.token}`

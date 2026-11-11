@@ -28,7 +28,7 @@ const Login = () => {
 
         try {
             const response = await fetch(
-                "http://localhost:8000/api/user/login",
+                "https://backend-commerce-tsn0.onrender.com/api/user/login",
                 {
                     method: "POST",
                     headers: {

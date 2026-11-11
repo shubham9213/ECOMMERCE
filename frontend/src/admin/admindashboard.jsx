@@ -28,7 +28,7 @@ export default function Admin() {
         const fetchstats = async () => {
             try {
                 const res = await fetch(
-                    "http://localhost:8000/api/analytics/admin/analytics",
+                    "https://backend-commerce-tsn0.onrender.com/api/analytics/admin/analytics",
                     {
                         headers: {
                             Authorization: `Bearer ${user.token}`

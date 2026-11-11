@@ -20,7 +20,7 @@ export default function Myprofile() {
         const fetchdata = async () => {
             try {
                 const res = await fetch(
-                    "http://localhost:8000/api/order/myorder",
+                    "https://backend-commerce-tsn0.onrender.com/api/order/myorder",
                     {
                         headers: {
                             Authorization: `Bearer ${user.token}`

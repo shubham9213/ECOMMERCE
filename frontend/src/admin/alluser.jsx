@@ -24,7 +24,7 @@ export default function Alluser() {
 
             try {
                 const res = await fetch(
-                    "http://localhost:8000/api/user/getalluser",
+                    "https://backend-commerce-tsn0.onrender.com/api/user/getalluser",
                     {
                         method: "GET",
                         headers: {

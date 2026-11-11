@@ -11,7 +11,7 @@ const Shop = () => {
 
     const fetchProducts = async () => {
         try {
-            const res = await fetch("http://localhost:8000/api/product/products");
+            const res = await fetch("https://backend-commerce-tsn0.onrender.com/api/product/products");
 
             const data = await res.json();
 

@@ -16,7 +16,7 @@ export default function Allproduct(){
 
         
             if(window.confirm("are yoyr sure to dlete an item ")){
-            const data=await fetch(`http://localhost:8000/api/product/${id}`,{
+            const data=await fetch(`https://backend-commerce-tsn0.onrender.com/api/product/${id}`,{
                 method:"DELETE",
                 headers:{
                     Authorization:`Bearer ${user.token}`

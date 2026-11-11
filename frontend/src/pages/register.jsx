@@ -31,7 +31,7 @@ const Register = () => {
 
         try {
             const response = await fetch(
-                "http://localhost:8000/api/user/register",
+                "https://backend-commerce-tsn0.onrender.com/api/user/register",
                 {
                     method: "POST",
                     headers: {
