@@ -22,7 +22,8 @@ export default function Checkout(){
             const order=await fetch("https://backend-commerce-tsn0.onrender.com/api/payment/createorder",{
                 method:"POST",
                 headers:{
-                        "Content-Type": "application/json"
+                        "Content-Type": "application/json",
+                        Authorization:`Bearer ${user.token}`
                 },
                 body:JSON.stringify({amount:totalprice})
 
@@ -63,7 +64,8 @@ export default function Checkout(){
                     const verify=await fetch("https://backend-commerce-tsn0.onrender.com/api/payment/verify",{
                         method:"POST",
                         headers:{
-                            "Content-Type": "application/json"
+                            "Content-Type": "application/json",
+                            Authorization:`Bearer ${user.token}`
                         },
                         body:JSON.stringify(response)
 
@@ -127,7 +129,7 @@ export default function Checkout(){
         //if order hi not create then bypass verfiy and model create
 
         try{
-            const resp=await fetch("http://localhost:8000/api/order/createorder",{
+            const resp=await fetch("https://backend-commerce-tsn0.onrender.com/api/order/createorder",{
                         method:"POST",
                         headers:{
                    "Content-Type": "application/json",
